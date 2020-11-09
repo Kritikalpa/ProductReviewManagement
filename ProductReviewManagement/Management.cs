@@ -54,5 +54,16 @@ namespace ProductReviewManagement
             }
         }
 
+        public void BottomRecords(List<ProductReview> listProductReview)
+        {
+            var recordedData = (from productReviews in listProductReview
+                                orderby productReviews.Rating descending
+                                select productReviews).Skip(5);
+
+            foreach (var list in recordedData)
+            {
+                Console.WriteLine("Product ID : " + list.ProductID + " User ID : " + list.UserID + " Rating : " + list.Rating + " Review : " + list.Review + " isLike : " + list.isLike);
+            }
+        }
     }
 }

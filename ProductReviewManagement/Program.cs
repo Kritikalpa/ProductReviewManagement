@@ -44,6 +44,9 @@ namespace ProductReviewManagement
             //UC5
             Console.WriteLine("\nUC5");
             management.RetrieveProductIdAndRatingOfRecords(productReviewList, 6);
+            //UC6
+            Console.WriteLine("\nUC6");
+            management.BottomRecords(productReviewList);
         }
     }
 }
