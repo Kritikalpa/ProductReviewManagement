@@ -50,6 +50,9 @@ namespace ProductReviewManagement
             //UC9
             Console.WriteLine("\nUC9");
             management.isLikeRecords(productReviewList);
+            //UC10
+            Console.WriteLine("\nUC10");
+            management.AverageRatingOfProductID(productReviewList);
         }
     }
 }

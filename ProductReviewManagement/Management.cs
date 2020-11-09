@@ -78,5 +78,14 @@ namespace ProductReviewManagement
             }
         }
 
+        public void AverageRatingOfProductID(List<ProductReview> listProductReview)
+        {
+            var recordedData = listProductReview.GroupBy(x => x.ProductID).Select(x => new { ProductID = x.Key, AverageRating = x.Average(y => y.Rating) });
+
+            foreach (var list in recordedData)
+            {
+                Console.WriteLine("Product ID : " + list.ProductID + " ------- " + "Count : " + list.AverageRating);
+            }
+        }
     }
 }
