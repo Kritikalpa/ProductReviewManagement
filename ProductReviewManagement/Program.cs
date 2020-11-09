@@ -31,6 +31,10 @@ namespace ProductReviewManagement
                 Console.WriteLine("Product ID : " + list.ProductID + " User ID : " + list.UserID + " Rating : " + list.Rating + " Review : " + list.Rating + " isLike : " + list.isLike);
             }
 
+            Management management = new Management();
+            //UC2
+            Console.WriteLine("\nUC2");
+            management.TopRecords(productReviewList);
         }
     }
 }
