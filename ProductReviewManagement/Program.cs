@@ -47,6 +47,9 @@ namespace ProductReviewManagement
             //UC6
             Console.WriteLine("\nUC6");
             management.BottomRecords(productReviewList);
+            //UC9
+            Console.WriteLine("\nUC9");
+            management.isLikeRecords(productReviewList);
         }
     }
 }
