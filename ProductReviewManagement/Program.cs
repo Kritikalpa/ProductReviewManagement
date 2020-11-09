@@ -53,6 +53,9 @@ namespace ProductReviewManagement
             //UC10
             Console.WriteLine("\nUC10");
             management.AverageRatingOfProductID(productReviewList);
+            //UC11
+            Console.WriteLine("\nUC11");
+            management.RecordsWithNiceReview(productReviewList);
         }
     }
 }

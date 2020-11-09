@@ -87,5 +87,17 @@ namespace ProductReviewManagement
                 Console.WriteLine("Product ID : " + list.ProductID + " ------- " + "Count : " + list.AverageRating);
             }
         }
+
+        public void RecordsWithNiceReview(List<ProductReview> listProductReview)
+        {
+            var recordedData = (from productReviews in listProductReview
+                                where productReviews.Review == "Nice"
+                                select productReviews);
+
+            foreach (var list in recordedData)
+            {
+                Console.WriteLine("Product ID : " + list.ProductID + " User ID : " + list.UserID + " Rating : " + list.Rating + " Review : " + list.Review + " isLike : " + list.isLike);
+            }
+        }
     }
 }
