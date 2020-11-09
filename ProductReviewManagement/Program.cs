@@ -35,6 +35,9 @@ namespace ProductReviewManagement
             //UC2
             Console.WriteLine("\nUC2");
             management.TopRecords(productReviewList);
+            //UC3
+            Console.WriteLine("\nUC3");
+            management.SelectedRecords(productReviewList);
         }
     }
 }
